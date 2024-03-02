@@ -49,7 +49,7 @@ async function Game({ params }) {
             </div>
             <div class="fixed bottom-4 right-4">
                 <a href="/">
-                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full shadow-lg">
                         Home
                     </button>
                 </a>
