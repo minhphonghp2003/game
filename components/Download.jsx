@@ -20,9 +20,9 @@ function Download({ url, name }) {
           🍵Buy me a coffee
         </button>
       </a>
-      <a href={url}>
+      <a href={url} download>
         <button className="bg-red-500 font-[cursive] hover:bg-red-700 text-white font-bold py-2 px-4 w-full rounded my-2">
-         🖱️ Tải liền chứ sợ gì
+          🖱️ Tải liền chứ sợ gì
         </button>
       </a>
 
