@@ -1,12 +1,31 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import GameItem from './GameItem';
-async function GameGrid() {
-    let allGames = await (await fetch("https://657470c9f941bda3f2afc286.mockapi.io/allgame", { cache: "no-store" })).json()
+import Pagination from './Pagination';
+function GameGrid({gamesApi}) {
+    let [currentPage, setCurrentPage] = useState(1)
+    let [totalCount, setTotalCount] = useState(0)
+    let [allGames, setGames] = useState()
+
+    let fetchGames = async () => {
+        setGames(await (await fetch(gamesApi, { cache: "no-store" })).json())
+        setTotalCount(40)
+    }
+    useEffect(() => {
+        fetchGames()
+    }, [currentPage])
     return (
-        <div className='m-auto justify-items-center w-[70%] gap-5 grid grid-cols-3'>
+        <div className='m-auto justify-items-center w-[100%] gap-5 grid grid-cols-3'>
             {allGames && allGames.map(g => {
                 return <GameItem id={g.id} image={g.image} name={g.name} key={g.id} />
             })}
+            <Pagination
+                onPageChange={setCurrentPage}
+                totalCount={totalCount}
+                currentPage={currentPage}
+                pageSize={12}
+                className={"col-span-3 mt-8"}
+            />
         </div>
     )
 }

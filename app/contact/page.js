@@ -4,7 +4,7 @@ import React from "react";
 function Card({ image, name, title, link }) {
     return (
         <div className="flex flex-col items-center">
-            <img className="rounded-full w-[13rem]" src={image} />
+            <img className="hover:rotate-45 duration-1000 rounded-full w-[13rem]" src={image} />
             <p className="text-center my-2 font-bold text-[1.3rem]"> {name}</p>
             <p className="text-center my-1 font-bold text-gray-500 text-[0.9rem]">
                 {" "}
@@ -29,7 +29,7 @@ function Contact() {
             </p>
             <p className="text-center text-gray-400">
                 Như đã bàn thì mọi vấn đề về pháp lí sẽ được chú Thái chịu trách
-                nhiệm 🤝🤝{" "}
+                nhiệm 📑📑{" "}
             </p>
             <div className="my-12 flex justify-between w-[50%] m-auto">
                 <Card
@@ -61,7 +61,7 @@ function Contact() {
 
                 <Card
                     image="https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFkIxDmqvIbxC_74JVjc1SKso2H55p0AlGyjYfnmnQCUXSkwPjrdBLR_HPhtLUqFUohA5tfQ_Y9k-7GOuHUDltJ&_nc_ohc=BGM03v5QUNkAX8Cyu10&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfBvqjWBZMbuwIkwWQ-oXLew9as6Jd6bvGehSk--BZdFXA&oe=660A92B8"
-                    name="MINH PHONG"
+                    name="Minh Phong"
                     title="WEB DEV"
                     link="https://www.facebook.com/profile.php?id=100071881584031"
                 />

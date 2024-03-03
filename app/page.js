@@ -1,33 +1,39 @@
+"use client";
+import Filter from "@/components/Filter";
 import GameGrid from "@/components/GameGrid";
-import Hero from "@/components/Hero";
 import HeroCaro from "@/components/HeroCaro";
-import NavBar from "@/components/NavBar";
-import Image from "next/image";
+import TitleDivider from "@/components/TitleDivider";
+import { useEffect, useState } from "react";
 
-export default async function Home() {
-    let heroItems = await (
-        await fetch("https://657470c9f941bda3f2afc286.mockapi.io/allgame", {
-            cache: "no-store",
-        })
-    ).json();
+export default function Home() {
+    let [heroItems, setHeroItems] = useState();
+    let [filter, setFilter] = useState({
+        title: "All games",
+        api: "https://655c5d4925b76d9884fd0e77.mockapi.io/posts",
+    });
+    let fetchHeroIt = async () => {
+        setHeroItems(
+            await (
+                await fetch(
+                    "https://655c5d4925b76d9884fd0e77.mockapi.io/posts",
+                    {
+                        cache: "no-store",
+                    }
+                )
+            ).json()
+        );
+    };
+    useEffect(() => {
+        fetchHeroIt();
+    }, []);
     return (
         <div>
-            {/* <Hero /> */}
             <HeroCaro items={heroItems} />
-            <div className="relative flex py-[5rem] items-center w-[70%] m-auto">
-                <div className="flex-grow border-t border-gray-400"></div>
-                <span className="flex-shrink mx-4  text-xl font-bold text-red-500">
-                    🎮🕹️GAME MỚI ĐĂNG
-                </span>
-                <div className="flex-grow border-t border-gray-400"></div>
-            </div>
-            <GameGrid />
-            <div class="fixed bottom-4 right-4">
-                <a href="/admin">
-                    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full shadow-lg">
-                        Admin panel
-                    </button>
-                </a>
+            {/* state */}
+            <TitleDivider title={`🎮🕹️ ${filter.title}`} />
+            <div className="flex justify-center w-[80%] m-auto">
+                <GameGrid gamesApi={filter.api} />
+                <Filter />
             </div>
         </div>
     );

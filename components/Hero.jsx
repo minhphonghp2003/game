@@ -3,9 +3,9 @@ import React from 'react'
 function Hero() {
   return (
     <header className="">
-      <div className="w-full bg-center bg-cover bg-[url(/gamejpeg.jpeg)]"
+      <div className="w-full h-[100vh] bg-center bg-cover bg-[url(/gamejpeg.jpeg)]"
       >
-        <div className="flex items-center justify-center w-full bg-gray-900 bg-opacity-70 py-48">
+        <div className="flex items-center justify-center w-full h-[100vh] bg-gray-900 bg-opacity-70 py-48">
           <div className="text-center">
             <div className="container px-4 mx-auto">
               <div className="max-w-4xl mx-auto text-center">
