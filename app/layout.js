@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
                 <NavBar />
                 
                 <div className="">{children}</div>
-                <Chat/>
+                {/* <Chat/> */}
                 <Footer/>
             </body>
         </html>
