@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Chat from "@/components/Chat";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -20,7 +21,6 @@ export default function RootLayout({ children }) {
                 <div className="">{children}</div>
                 <Chat/>
                 <Footer/>
-                <script src="./node_modules/preline/dist/preline.js"></script>
             </body>
         </html>
     );

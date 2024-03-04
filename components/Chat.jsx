@@ -66,7 +66,7 @@ function Chat() {
     let [isCollapsed, setCollapsed] = useState(true)
     return (
         <div className='fixed text-red-700 bottom-0 right-4'>
-            <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200  font-medium rounded-lg text-sm px-20 py-2.5 text-center me-2 mb-2 w-full duration-700" onClick={() => { setCollapsed(!isCollapsed) }}>🗨️Chat</button>
+            <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200  font-medium rounded-lg text-sm px-20 py-2.5 text-center me-2 mb-2 w-full duration-700" onClick={() => { setCollapsed(!isCollapsed) }}>️⚔️Chat⚔️</button>
             <Box>
                 <div className={`${isCollapsed ? "h-0" : "h-[50vh] "} duration-1000 `}>
                     <ChatBox />

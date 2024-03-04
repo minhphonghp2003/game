@@ -12,9 +12,6 @@ function Filter() {
 
         <div className='w-[22rem]'>
             <Box>
-                <form className=" mx-auto px-5">
-                    <input type="search" id="default-search" className=" inline w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="🔎Search game..." required />
-                </form>
 
                 <form className="max-w-sm mx-auto px-4">
                     <label for="type" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Chọn thể loại</label>

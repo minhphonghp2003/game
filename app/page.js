@@ -33,7 +33,7 @@ export default function Home() {
             <TitleDivider title={`🎮🕹️ ${filter.title}`} />
             <div className="flex justify-center w-[80%] m-auto">
                 <GameGrid gamesApi={filter.api} />
-                <Filter />
+                {/* <Filter /> */}
             </div>
         </div>
     );
