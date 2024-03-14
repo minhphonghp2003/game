@@ -45,7 +45,7 @@ function Contact() {
                     link="https://www.facebook.com/kmaat18ntrngphong"
                 />
                 <Card
-                    image="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-1/400434002_2056527118030233_5728908554993856374_n.jpg?stp=dst-jpg_p320x320&_nc_cat=111&ccb=1-7&_nc_sid=5740b7&_nc_eui2=AeH8hVbh-_bq0Ota4FAvngk5pPxO1RkiUXak_E7VGSJRduo3-OzBofLSaOvBzx086nAxuMFmkYZn2mh2dhz0fvg8&_nc_ohc=6anziTS6LSgAX-eS_X-&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfAPDM5ldpqnBRZC8i3q28eMPxVvi2zSS6EzHlxB1nhPrw&oe=65E807E6"
+                    image="https://scontent.fsgn5-6.fna.fbcdn.net/v/t39.30808-1/400434002_2056527118030233_5728908554993856374_n.jpg?stp=dst-jpg_p320x320&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH8hVbh-_bq0Ota4FAvngk5pPxO1RkiUXak_E7VGSJRduo3-OzBofLSaOvBzx086nAxuMFmkYZn2mh2dhz0fvg8&_nc_ohc=ZdYL3VZo2cAAX8KsLWY&_nc_ht=scontent.fsgn5-6.fna&oh=00_AfBH4FxaM4RwHtW5Ujm4pXH9AiDPWYKiHC8SZNz-2dorSQ&oe=65F7D9E6"
                     name="Tài Nguyên"
                     title="MALWARE DEV"
                     link="https://www.facebook.com/neyugniat1607"
